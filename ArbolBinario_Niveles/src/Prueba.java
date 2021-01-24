@@ -5,6 +5,32 @@ public class Prueba {
 	
 	ArbolNivel arbol = new ArbolNivel();	
 	
+	arbol.insertar(50);
+	arbol.insertar(40);
+	arbol.insertar(80);
+	arbol.insertar(20);
+	arbol.insertar(45);
+	arbol.insertar(60);
+	arbol.insertar(90);
+	arbol.insertar(85);
+	arbol.insertar(100);
+	arbol.insertar(95);
+	
+	System.out.println("El utlimo es: "+arbol.getRaiz().getHijoDer().getHijoDer().getHijoDer().getHijoIzq().getDato());
+	
+	System.out.println("Dato: "+arbol.busqueda(arbol.raiz, 95).getDato());
+	System.out.println("Dato: "+arbol.buscador(50));
+	arbol.recorridoIN(arbol.getRaiz());
+	System.out.println("\nEliminado");
+	arbol.eliminarNodo_Dat(20);
+	arbol.recorridoIN(arbol.getRaiz());
+	
+	}
+}
+
+/*
+	ArbolNivel arbol = new ArbolNivel();	
+	
 	arbol.insertar(8);
 	arbol.insertar(3);
 	arbol.insertar(10);
@@ -51,13 +77,13 @@ public class Prueba {
 	arbol3.insertar(30);
 	arbol3.insertar(14);
 	arbol3.insertar(24);
+	//arbol3.insertar(13);
 	
 	System.out.println("\n Tercer arbol\n");
 	
 	System.out.println("La altura es: "+arbol3.retornarAltura());
-	System.out.println("El nodo es: "+arbol3.buscadorUltimo(arbol3.getRaiz()));
-	Nodo a3 = arbol3.buscadorUltimo(arbol3.getRaiz());
+	System.out.println("El nodo es: "+arbol3.buscadoUltimo(arbol3.getRaiz()));
+	Nodo a3 = arbol3.buscadoUltimo(arbol3.getRaiz());
 	System.out.println("El valor de nodo es: "+a3.getDato());
 	
-	}
-}
+	*/

@@ -14,6 +14,9 @@ public class Nodo {
 	public int getDato() {
 		return dato;
 	}
+	public void setDato(int dato) {
+		this.dato = dato;
+	}
 
 	public Nodo getHijoIzq() {
 		return hijoIzq;
@@ -30,6 +33,5 @@ public class Nodo {
 	public void setHijoDer(Nodo hijoDer) {
 		this.hijoDer = hijoDer;
 	}
-	
 	
 }
